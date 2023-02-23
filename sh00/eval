@@ -1,0 +1,59 @@
+cd ex00
+ls (comprobar que solo entrega el archivo z)
+cat z
+cd ..
+
+cd ex01
+ls (comprobar que solo entrega el archivo testShell0.tar)
+tar -xf testShell00.tar
+ls -l (comprobar que ya sale el archivo testShell00 descomprimido)
+cd ..
+
+cd ex02
+ls (comprobar que solo entrega el archivo exo2.tar)
+tar -pxf exo2.tar
+ls -l (comprobar que se han descomprimido los archivos)
+comprobar que los permisos, fechas, pesos... están correctos
+cd ..
+
+cd ex03
+ls (comprobar que solo entrega el archivo id_rsa_pub)
+cat id_rsa_pub
+cd ..
+
+cd ex04
+ls (midLS)
+cd .. 
+bash ex04/midLS
+
+cd ex05
+ls (git_commit.sh)
+bash git_commit.sh | cat -e
+cd ..
+
+cd ex06
+ls (git_ignore.sh)
+cd ..
+nano .gitignore
+>paco
+>pepe
+(ctrl O ctrlD)
+touch pepe
+bash ex06/git_ignore.sh | cat -e
+cd ..
+
+cd ex07
+cat b
+
+cd ex08
+touch a
+touch b~
+touch #c
+touch #d#
+./clean
+./clean 
+cd ..
+
+cd ex09
+cat ft_magic
+file -m ft_magic *

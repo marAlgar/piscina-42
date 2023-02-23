@@ -1,0 +1,4 @@
+Para compilar:
+
+  > gcc -Wall -Wextra -Werror main.c  ft_***.c
+  > ./a.out
