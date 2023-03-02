@@ -1,43 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marcealv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/23 12:13:52 by marcealv          #+#    #+#             */
-/*   Updated: 2023/02/23 12:27:32 by marcealv         ###   ########.fr       */
+/*   Created: 2023/02/24 11:50:23 by marcealv          #+#    #+#             */
+/*   Updated: 2023/03/01 15:54:43 by marcealv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include <stdio.h>
-
-void	ft_ultimate_ft(int *********nbr);
-
-int	main(void)
+*/
+void	ft_rev_int_tab(int *tab, int size)
 {
 	int	a;
-	int	*ptr1;
-	int	**ptr2;
-	int	***ptr3;
-	int	****ptr4;
-	int	*****ptr5;
-	int	******ptr6;
-	int	*******ptr7;
-	int	********ptr8;
-	int	*********ptr9;
+	int	temp;
 
-	a = 100;
-	ptr1 = &a;
-	ptr2 = &ptr1;
-	ptr3 = &ptr2;
-	ptr4 = &ptr3;
-	ptr5 = &ptr4;
-	ptr6 = &ptr5;
-	ptr7 = &ptr6;
-	ptr8 = &ptr7;
-	ptr9 = &ptr8;
-	ft_ultimate_ft(ptr9);
-	printf("%d", a);
+	a = 0;
+	while (a < (size / 2))
+	{
+		temp = tab[a];
+		tab[a] = tab[size - 1 - a];
+		tab[size - 1 - a] = temp;
+		a++;
+	}
+}
+/*
+int	main(void)
+{
+	int	tab[6];
+	int	size;	
+
+	size = 6;
+	tab[0] = 1;
+	tab[1] = 2;
+	tab[2] = 3;
+	tab[3] = 4;
+	tab[4] = 5;
+	tab[5] = 6;
+	ft_rev_int_tab(tab, size);
+	printf("%d, %d, %d, %d, %d, %d", tab[0], \
+	tab[1], tab[2], tab[3], tab[4], tab[5]);
 	return (0);
 }
+*/

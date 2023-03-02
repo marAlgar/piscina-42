@@ -6,13 +6,25 @@
 /*   By: marcealv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 10:29:50 by marcealv          #+#    #+#             */
-/*   Updated: 2023/02/23 12:01:42 by marcealv         ###   ########.fr       */
+/*   Updated: 2023/02/28 12:44:56 by marcealv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
+/*
+#include <stdio.h>
+*/
 void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }
+/*
+int	main(void)
+{
+	int	a;
+	int	*ptr;
+    
+	ptr = &a;
+	ft_ft(ptr);
+	printf("%d", a);
+}
+*/

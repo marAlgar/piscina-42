@@ -1,26 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marcealv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/23 10:33:17 by marcealv          #+#    #+#             */
-/*   Updated: 2023/02/23 12:02:19 by marcealv         ###   ########.fr       */
+/*   Created: 2023/02/24 11:07:11 by marcealv          #+#    #+#             */
+/*   Updated: 2023/02/28 12:45:28 by marcealv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+/*
 #include <stdio.h>
+*/
+int	ft_strlen(char *str)
+{
+	int	length;
 
-void	ft_ft(int *nbr);
-
+	length = 0;
+	while (*str != '\0')
+	{
+		length++;
+		str++;
+	}
+	return (length);
+}
+/*
 int	main(void)
 {
-	int	a;
-	int	*ptr;
+	char	*s;
 
-	ptr = &a;
-	ft_ft(ptr);
-	printf("%d", a);
+	s = "marcealv";
+	printf("%d\n", ft_strlen(s));
 }
+*/

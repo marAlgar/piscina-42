@@ -6,12 +6,13 @@
 /*   By: marcealv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 12:28:52 by marcealv          #+#    #+#             */
-/*   Updated: 2023/02/23 12:35:31 by marcealv         ###   ########.fr       */
+/*   Updated: 2023/02/28 12:45:10 by marcealv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include <stdio.h>
-
+*/
 void	ft_swap(int *a, int *b)
 {
 	int	temp;
@@ -20,3 +21,16 @@ void	ft_swap(int *a, int *b)
 	*a = *b;
 	*b = temp;
 }
+/*
+int	main()
+ {
+	 int a;
+	 int b;
+	 
+	 a = 21;
+	 b = 42;
+	 ft_swap(&a, &b);
+	 printf("%d %d", a, b);
+     return (0);
+}
+*/

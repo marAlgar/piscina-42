@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marcealv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/23 12:30:29 by marcealv          #+#    #+#             */
-/*   Updated: 2023/02/23 12:36:33 by marcealv         ###   ########.fr       */
+/*   Created: 2023/02/24 10:45:13 by marcealv          #+#    #+#             */
+/*   Updated: 2023/03/01 16:01:49 by marcealv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h> 
 
-void	ft_swap(int *a, int *b);
-
-int	main()
+void	ft_putstr(char *str)
 {
-	int	a;
-	int b;
-	
-	a = 21;
-	b = 42;
-	ft_swap(&a,	&b);
-	printf("%d %d", a, b);
-	return (0);
+	while (*str != '\0')
+	{
+		write (1, str, 1);
+		str++;
+	}
 }
+/*
+int	main(void)
+{
+	char	*s;
+
+	s = "marcealv";
+	ft_putstr(s);
+}
+*/
